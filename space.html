@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entorno Espacial</title>
+    <meta name="description" content="A-Frame scene with flying stars in space">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-particle-system-component@1.0.0/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Estrellas -->
+      <a-entity particle-system="preset: stars; color: #FFF; particleCount: 2000"></a-entity>
+
+      <!-- Cielo Espacial -->
+      <a-sky color="#000"></a-sky>
+
+      <!-- Cámara -->
+      <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
